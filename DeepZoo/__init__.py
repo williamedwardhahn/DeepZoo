@@ -32,12 +32,12 @@ def blit_array(b,xy):
 fps = 60
 clock = pg.time.Clock()
 
-def setup_screen(h,w):
-   
-    screen = pg.display.set_mode((w, h))
-    pg.display.set_caption('DeepZoo')
-    pg.init()
-    font = pg.font.SysFont('futura', 30)
+import pygame
+import numpy as np
+from pygame import surfarray
+
+def setup(h,w):
+    return pygame.display.set_mode((w, h))
     
     
 
