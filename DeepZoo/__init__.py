@@ -51,11 +51,17 @@ def blit(display, img):
 def blit_array(screen,b,xy):
     screen.blit(pg.surfarray.make_surface(b*1.0),(xy[0],xy[1]))	
     
+# def keys():
+# 	for event in pg.event.get():
+# 		if event.type == pg.QUIT:
+# 			run = False
+# 	return np.where(pg.key.get_pressed())[0]
+
 def keys():
-	for event in pg.event.get():
-		if event.type == pg.QUIT:
-			run = False
-	return np.where(pg.key.get_pressed())[0]
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
+    return np.array(pygame.key.get_pressed())
 
 def mouse():
 	for event in pg.event.get():
