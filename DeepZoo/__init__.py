@@ -30,14 +30,15 @@ def blit_array(b,xy):
     screen.blit(pg.surfarray.make_surface(b*1.0),(xy[0],xy[1]))
     
 fps = 60
-   
+clock = pg.time.Clock()
+
 def setup_screen(h,w):
    
     screen = pg.display.set_mode((w, h))
     pg.display.set_caption('DeepZoo')
     pg.init()
     font = pg.font.SysFont('futura', 30)
-    clock = pg.time.Clock()
+    
     
 
 
