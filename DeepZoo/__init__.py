@@ -9,6 +9,12 @@ from pygame import *
 import pygame as pg
 import pygame
 
+#################################################
+up = 82
+down = 81
+left = 80
+right = 79
+#################################################
 
 
 def plot(x):
