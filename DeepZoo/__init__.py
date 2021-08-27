@@ -29,7 +29,7 @@ def get_google_slide(url):
 def blit_array(b,xy):
     screen.blit(pg.surfarray.make_surface(b*1.0),(xy[0],xy[1]))
     
-
+FPS = 60
    
 def setup_screen(h,w):
    
