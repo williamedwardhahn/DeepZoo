@@ -37,7 +37,7 @@ def setup_screen(h,w):
    
     screen = pg.display.set_mode((w, h))
     pg.display.set_caption('DeepZoo')
-
+    pg.init()
     return screen
 
-hello = "world"
+
