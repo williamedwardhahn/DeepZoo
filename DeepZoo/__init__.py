@@ -9,6 +9,8 @@ from pygame import *
 import pygame as pg
 import pygame
 
+
+
 def plot(x):
     fig, ax = plt.subplots()
     im = ax.imshow(x, cmap = 'gray')
@@ -72,4 +74,5 @@ def update():
 	pg.display.update()
 	
 def clear():
+	global screen
 	screen.fill((0,0,0))
