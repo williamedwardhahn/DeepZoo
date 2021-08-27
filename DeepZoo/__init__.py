@@ -42,4 +42,5 @@ def setup(h,w):
     
 def draw(display, img):
     surfarray.blit_array(display, img)
+    pygame.display.flip()
 
