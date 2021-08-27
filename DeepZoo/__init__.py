@@ -48,6 +48,8 @@ def blit(display, img):
     surfarray.blit_array(display, img)
     pygame.display.flip()
 
+def blit_array(screen,b,xy):
+    screen.blit(pg.surfarray.make_surface(b*1.0),(xy[0],xy[1]))	
     
 def keys():
 	for event in pg.event.get():
