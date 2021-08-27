@@ -40,28 +40,28 @@ import numpy as np
 from pygame import surfarray
 
 def setup(h,w):
-    pygame.display.set_caption('DeepZoo')
-    return pygame.display.set_mode((w, h))
-  
-    
+	pygame.display.set_caption('DeepZoo')
+	return pygame.display.set_mode((w, h))
+
+
 def blit(display, img):
-    surfarray.blit_array(display, img)
-    pygame.display.flip()
+	surfarray.blit_array(display, img)
+	pygame.display.flip()
 
 def blit_array(screen,b,xy):
-    screen.blit(pg.surfarray.make_surface(b*1.0),(xy[0],xy[1]))	
-    
+	screen.blit(pg.surfarray.make_surface(b*1.0),(xy[0],xy[1]))	
+
 def keys():
 	for event in pg.event.get():
 		if event.type == pg.QUIT:
-		run = False
+			run = False
 	return np.where(pg.key.get_pressed())[0]
 
 def keys_vector():
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            run = False
-    return np.array(pygame.key.get_pressed())
+	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+			run = False
+	return np.array(pygame.key.get_pressed())
 
 def mouse():
 	for event in pg.event.get():
@@ -76,9 +76,9 @@ def cut_sprites(image,block_shape):
 
 def tick():
 	clock.tick(fps)
-	
+
 def update():
 	pg.display.update()
-	
+
 def clear(screen):
 	screen.fill((0,0,0))
