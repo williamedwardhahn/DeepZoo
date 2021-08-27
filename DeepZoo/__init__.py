@@ -70,3 +70,6 @@ def tick():
 	
 def update():
 	pg.display.update()
+	
+def clear():
+	screen.fill((0,0,0))
