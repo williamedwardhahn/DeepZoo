@@ -1,11 +1,13 @@
-
-from pygame import *
+# William Edward Hahn
+# (c) 2021
 import numpy as np
 from skimage import io as io
 import os
 import matplotlib.pyplot as plt
 from skimage.util import view_as_blocks
+from pygame import *
 import pygame as pg
+import pygame
 
 def plot(x):
     fig, ax = plt.subplots()
