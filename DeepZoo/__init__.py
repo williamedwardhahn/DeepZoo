@@ -61,8 +61,8 @@ def mouse():
 	return (pg.mouse.get_pos(), np.where(pg.mouse.get_pressed())[0])
 
 
-def cut_sprites(image):
-	images = view_as_blocks(image, block_shape=(32,32,3))
+def cut_sprites(image,block_shape):
+	images = view_as_blocks(image,block_shape))
 	return [[pygame.surfarray.make_surface(flipimg(images[j,i,0,:,:,:])) for i in range(images.shape[1])] for j in range(images.shape[0])]
 
 def tick():
