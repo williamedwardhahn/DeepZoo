@@ -8,6 +8,7 @@ from skimage.util import view_as_blocks
 from pygame import *
 import pygame as pg
 import pygame
+from pygame.surfarray import *
 
 #################################################
 up = 82
