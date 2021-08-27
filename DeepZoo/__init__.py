@@ -57,3 +57,7 @@ def mouse():
 		if event.type == pg.QUIT:
 			run = False
 	return (pg.mouse.get_pos(), np.where(pg.mouse.get_pressed())[0])
+
+
+def tick()
+	clock.tick(fps)
