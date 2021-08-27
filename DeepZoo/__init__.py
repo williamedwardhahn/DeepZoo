@@ -37,7 +37,9 @@ import numpy as np
 from pygame import surfarray
 
 def setup(h,w):
+    pygame.display.set_caption('DeepZoo')
     return pygame.display.set_mode((w, h))
+
     
     
 def draw(display, img):
