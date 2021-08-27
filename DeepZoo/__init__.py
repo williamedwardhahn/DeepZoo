@@ -27,3 +27,16 @@ def get_google_slide(url):
 
 def blit_array(b,xy):
     screen.blit(pg.surfarray.make_surface(b*1.0),(xy[0],xy[1]))
+    
+    
+
+font = pg.font.SysFont('futura', 30)
+
+clock = pg.time.Clock()
+fps = 60
+
+screen_width = 1000
+screen_height = 1000
+
+screen = pg.display.set_mode((screen_width, screen_height))
+pg.display.set_caption('DeepZoo')
