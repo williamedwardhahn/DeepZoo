@@ -6,7 +6,6 @@ import os
 import matplotlib.pyplot as plt
 from skimage.util import view_as_blocks
 import pygame as pg
-global screen,clock
 
 def plot(x):
     fig, ax = plt.subplots()
