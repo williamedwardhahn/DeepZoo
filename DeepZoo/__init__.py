@@ -8,7 +8,6 @@ from skimage.util import view_as_blocks
 from pygame import *
 import pygame as pg
 import pygame
-from pygame.surfarray import *
 
 #################################################
 up = 82
@@ -89,3 +88,6 @@ def update():
 
 def clear(screen):
 	screen.fill((0,0,0))
+	
+def load(image):
+	return pygame.surfarray.make_surface(image)
