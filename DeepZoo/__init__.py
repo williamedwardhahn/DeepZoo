@@ -46,3 +46,15 @@ def draw(display, img):
     surfarray.blit_array(display, img)
     pygame.display.flip()
 
+    
+def keys():
+	for event in pg.event.get():
+		if event.type == pg.QUIT:
+			run = False
+	return np.where(pg.key.get_pressed())[0]
+
+def mouse():
+	for event in pg.event.get():
+		if event.type == pg.QUIT:
+			run = False
+	return (pg.mouse.get_pos(), np.where(pg.mouse.get_pressed())[0])
