@@ -59,5 +59,8 @@ def mouse():
 	return (pg.mouse.get_pos(), np.where(pg.mouse.get_pressed())[0])
 
 
-def tick()
+def tick():
 	clock.tick(fps)
+	
+def update():
+	pg.display.update()
