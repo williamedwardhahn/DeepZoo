@@ -78,7 +78,7 @@ def mouse():
 
 def cut_sprites(image,block_shape):
 	images = view_as_blocks(image,block_shape)
-	return [[pygame.surfarray.make_surface(flipimg(images[j,i,0,:,:,:3])) for i in range(images.shape[1])] for j in range(images.shape[0])]
+	return [[pygame.surfarray.make_surface(flipimg(images[j,i,0,:,:,:3])) for i in range(images.shape[1])] for j in range(images.shape[0])][0]
 
 def tick():
 	clock.tick(fps)
