@@ -40,5 +40,6 @@ def setup(h,w):
     return pygame.display.set_mode((w, h))
     
     
-
+def draw(display, img)
+    surfarray.blit_array(display, img)
 
