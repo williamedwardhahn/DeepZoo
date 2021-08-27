@@ -73,6 +73,5 @@ def tick():
 def update():
 	pg.display.update()
 	
-def clear():
-	global screen
+def clear(screen):
 	screen.fill((0,0,0))
