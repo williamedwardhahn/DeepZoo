@@ -1,0 +1,3 @@
+msi-perkeyrgb --model GE63 -c config1.txt
+
+https://github.com/Askannz/msi-perkeyrgb
