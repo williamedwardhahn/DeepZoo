@@ -21,7 +21,7 @@ def plot(x):
     fig, ax = plt.subplots()
     im = ax.imshow(x, cmap = 'gray')
     ax.axis('off')
-    fig.set_size_inches(18, 10)
+    fig.set_size_inches(5, 5)
     plt.show()
 
 def flipimg(x):
