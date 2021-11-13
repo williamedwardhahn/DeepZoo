@@ -108,7 +108,7 @@ from mlagents_envs.environment import ActionTuple, BaseEnv
 import matplotlib.pyplot as plt
 import numpy as np
 
-def step(action):
+def step(env,action):
     action_tuple = ActionTuple()
     action_tuple.add_discrete(action)
     behavior_name = list(env.behavior_specs)[0]
