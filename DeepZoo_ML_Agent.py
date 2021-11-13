@@ -2,9 +2,7 @@ import os
 os.system("pip install --ignore-installed  git+https://github.com/williamedwardhahn/DeepZoo")
 from DeepZoo import *
 
-env = UnityEnvironment(file_name="Fox1", seed=1, side_channels=[])
-env.reset()
-
+env = start("Fox1")
 
 for i in range(10):
 
@@ -14,3 +12,17 @@ for i in range(10):
 
     plt.imshow(state)
     plt.show()
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
