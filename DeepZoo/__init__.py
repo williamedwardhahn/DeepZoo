@@ -108,6 +108,11 @@ from mlagents_envs.environment import ActionTuple, BaseEnv
 import matplotlib.pyplot as plt
 import numpy as np
 
+def start(game):
+    env = UnityEnvironment(file_name=game, seed=1, side_channels=[])
+    env.reset()
+    return env
+
 def step(env,action):
     action_tuple = ActionTuple()
     action_tuple.add_discrete(action)
